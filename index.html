@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>Growth Hack Mega Metting</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .module {
+      height: 100vh;
+      /* Use vh as a fallback for browsers that do not support Custom Properties */
+      height: calc(var(--vh, 1vh) * 100);
+      margin: 0 auto;
+      max-width: 30%;
+    }
+
+    .titulo_evento {
+      text-align: center;
+    }
+
+    .btn-comprar {
+      margin: 2% 1% 4% 1%;
+    }
+
+    .btn-saiba-mais {
+      margin: 4% 1% 2% 1%;
+    }
+
+    hr {
+      border-top: 3px solid rgba(0, 0, 0, 1);
+    }
+  </style>
+
+  <script>
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  </script>
+
+</head>
+
+<body>
+    <div class="jumbotron" style="height: 0%; margin-bottom: 0;">
+      <h1 class="display-4 titulo_evento">Nome do evento</h1>
+      <p class="lead titulo_evento">This is a simple hero unit, a simple jumbotron-style component for calling extra
+        attention to
+        featured content or information.</p>
+    </div>
+    <hr class="my-0" s>
+    <div style="height: 60%;  margin-bottom: 10%; padding: 0px; ">
+      <div class="jumbotron row">
+        <div class="col-md-8">
+          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="btn-comprar">
+            <a class="btn btn-lg btn-primary" href="#" role="button" style="width: 80%">Comprar seu ingresso »</a>
+          </div>
+          <div class="btn-saiba-mais">
+            <a class="btn btn-lg btn-primary" href="#" role="button" style="width: 80%">Saiba mais »</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bottom navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        <li class="nav-item dropup">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropup</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  -->
+</body>
+
+</html>
