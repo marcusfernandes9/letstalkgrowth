@@ -1,88 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <title>Growth Hack Mega Metting</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Let's talk Growth</title>
 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) 
+          return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n
+              .callMethod
+              .apply(n, arguments)
+            : n
+              .queue
+              .push(arguments)
+        };
+        if (!f._fbq) 
+          f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s
+          .parentNode
+          .insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '370026670557021');
+      fbq('track', 'PageView');
+    </script>
 
-  <style>
-    .module {
-      height: 100vh;
-      /* Use vh as a fallback for browsers that do not support Custom Properties */
-      height: calc(var(--vh, 1vh) * 100);
-      margin: 0 auto;
-      max-width: 30%;
-    }
+    <noscript>
+      <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=370026670557021&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
-    .titulo_evento {
-      text-align: center;
-    }
+    <link href="style.css" rel="stylesheet">
+  </head>
 
-    .btn-comprar {
-      margin: 2% 1% 4% 1%;
-    }
-
-    .btn-saiba-mais {
-      margin: 4% 1% 2% 1%;
-    }
-
-    hr {
-      border-top: 3px solid rgba(0, 0, 0, 1);
-    }
-  </style>
-
-  <script>
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    let vh = window.innerHeight * 0.01;
-    // Then we set the value in the --vh custom property to the root of the document
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  </script>
-
-</head>
-
-<body>
-    <div class="jumbotron" style="height: 0%; margin-bottom: 0;">
-      <h1 class="display-4 titulo_evento">Nome do evento</h1>
-      <p class="lead titulo_evento">This is a simple hero unit, a simple jumbotron-style component for calling extra
-        attention to
-        featured content or information.</p>
-    </div>
-    <hr class="my-0" s>
-    <div style="height: 60%;  margin-bottom: 10%; padding: 0px; ">
-      <div class="jumbotron row">
-        <div class="col-md-8">
-          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-          <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-        </div>
-        <div class="col-md-4">
-          <div class="btn-comprar">
-            <a class="btn btn-lg btn-primary" href="#" role="button" style="width: 80%">Comprar seu ingresso »</a>
+  <body>
+    <div id="head-introducao" class="head-introducao col-md-12" >
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <div class="introducao">
+            <div class="logo">
+              <img src="img/logo-prancheta-1.png" width="40%">
+            </div>
           </div>
-          <div class="btn-saiba-mais">
-            <a class="btn btn-lg btn-primary" href="#" role="button" style="width: 80%">Saiba mais »</a>
+          <!-- introducao -->
+        </div>
+        <!-- cols -->
+      </div>
+      <!-- row -->
+      <div class="row">
+        <div class="offset-md-1 col-md-6">
+          <p>Aproveite a oportunidade de aprender sobre uma das áreas que mais crescem no Brasil!</p>
+          <h1>VENHAM PARA O NOSSO TALK</h1>
+          <p>Você é curioso, criativo e gosta de dados? Quer saber como aplicar Growth Hacking na prática? Venha participar da primeira Let's Talk Growth Floripa!</p>
+          <p>A Let's Talk Growth é um encontro voltado para o mercado de Marketing. Nele, você vai ficar por dentro de todas as novidades de como se destacar na área bem como fazer aquele networking com a galera que já atua no mercado!</p>
+          <p></p>
+          <br/>
+          <p>
+            <b>Temas do evento:</b> Marketing digital, growth hacking, product-lead growth e gestão ágil.<br/>
+          </p>
+          <p>
+            <b>Hora:</b> 18h30 - 21h00 <br/>
+            <b>Data:</b> 05/09<br/>
+            <b>Local:</b> Acate Downtown
+          </p>
+        </div>
+        <div id="div-botoes" class="offset-md-1 col-md-3">
+          <div class="div-btn-comprar">
+            <a id="btn-comprar" class="btn btn-primary btn-md" role="button" style="width: 50%"
+              href="https://www.sympla.com.br/lets-talk-growth---acelerar-resultados-em-mercados-competitivos__632894"
+              target="_blank">
+              COMPRAR INGRESSOS
+            </a>
+          </div>
+          <!--
+          <div class="div-saiba-mais">
+            <a id="btn-saiba-mais" class="btn btn-primary btn-md" href="#" role="button" style="width: 50%">SAIBA MAIS</a>
+          </div>
+          -->
+          <div class="div-quero-contribuir">
+            <a id="btn-quero-contribuir" class="btn btn-primary btn-md" role="button" style="width: 50%"
+              href="https://bit.ly/2lrY9Zp" target="_blank">QUERO COLABORAR</a>
           </div>
         </div>
       </div>
     </div>
 
+    <div id="div-mais-informacoes" class="col-md-12" style="padding-bottom: 10%" >
+      <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+          <div class="div-quero-contribuir">
+              <a id="btn-agenda" class="btn btn-primary btn-md" role="button" style="width: 12%; min-width: 200px;">
+                <h2>Agenda</h2>
+              </a>
+            </div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+
+        <div class="offset-md-1 col-md-5" style="border-right-style: solid; border-right-color:#2F7AD3; padding-right:5% ">
+          <div class="row">
+            <div class=" offset-md-4 col-md-8">
+              <h4 style="font color: red" size="12px">Abertura - 18h30</h4>
+              <br/>
+            </div>
+          </div>
+          <div class="row">
+            <div style="text-align: center;" class="col-md-4">
+              <img src="./img/pessoas/elisa.jpg" alt="" style="border-radius: 100%; width:150px;overflow: hidden;">
+              <img src="./img/pessoas/leonardo.jpg" alt="" style="border-radius: 100%; width:150px;overflow: hidden;">
+            </div>
+            <div class="col-md-8">
+              <h4>Elisa Silvestri Cândido e Leonardo Miyaji Kolesnikovas</h4>
+              <h5>Além dos Hacks: Criando uma cultura de growth em uma startup</h5>
+              <p>A Elisa Cândido, Growth Analyst da Conpass e o Leonardo Kolesnikovas, Growth Hacker,
+              vão compartilhar conosco os conceitos fundamentais da metodologia de growth e contar como foi 
+              a experiência de criar a área e disseminar essa cultura! </p>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div style="text-align: center;" class="col-md-4">
+                <img src="./img/pessoas/vinicius.jpeg" alt="" style="margin-top:18%; border-radius: 100%; width:150px;overflow: hidden;">
+            </div>
+            <div class="col-md-8">
+              <h4>Vinícius Mello - Consultor de growth e marketing de performance</h4>
+              <h5>Growth na prática: 5 técnicas aplicáveis na sua empresa!</h5>
+              <p>Veja nesta apresentação como aplicar conceitos de prova social, marketing de engajamento e
+               indicação para aumentar os resultados na sua empresa! </p>
+              <!--
+              <br/>
+              <h4 style="color: #2F7AD3;font-weight: bold;">Happy Hour - 20h30</h4>
+              -->
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div style="text-align: center;" class="col-md-4">
+              <img src="./img/pessoas/thiago.jpg" alt="" style="border-radius: 100%; width:150px;overflow: hidden;">
+            </div>
+            <div class="col-md-8">
+              <h4>Thiago Gouveia Rocha - Growth e Performance Marketing na Resultados Digitais</h4>
+              <br/>
+              <h5>Facilitador - Mesa redonda</h5>
+              <!--
+              <br/>
+              <h4 style="color: #2F7AD3;font-weight: bold;">Happy Hour - 20h30</h4>
+              -->
+            </div>
+          </div>
+        </div>
+
+        <div class="offset-md-1 col-md-5" style="border-right-style: solid; padding-right:5%; padding-top:5% ">
+          <div style="margin-left: 5%" class="row">
+            <h2 style="font-weight: bold;">Não perca esse&nbsp;</h2><h2 style="color: #EE4266;font-weight: bold;">talk</h2>
+          </div>
+          <br/>
+          <div style="margin-left: 3%" class="row">
+            <div class="col-md-3">
+              <p style="font-weight: bold;" >quando?</p>
+            </div>
+            <div class="col-md-8">
+              <p >5 de setembro de 2019</p>
+            </div>
+          </div>
+          <div style="margin-left: 3%" class="row">
+            <div class="col-md-3">
+              <p style="font-weight: bold;">onde?</p>
+            </div>
+            <div style="margin-left: 3%" class="col-md-8">
+              <p >Acate Downtown</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8" style="margin-top: 20%">
+              <div id="sympla-widget-632894"></div>
+              <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/632894"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--
   <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Bottom navbar</a>
@@ -114,6 +233,27 @@
     </div>
   </nav>
   -->
-</body>
+    <script>
+      var altura = window.innerHeight;
+
+      if(window.innerHeight >=1000){
+        altura = window.innerHeight;
+      } else {
+        altura = 1000;
+      }
+
+      document
+        .getElementById('head-introducao')
+        .style
+        .height = `${altura}px`
+        /*
+        document
+        .getElementById('div-mais-informacoes')
+        .style
+        .height = `${window
+        .innerHeight}px`
+        */
+    </script>
+  </body>
 
 </html>
